@@ -19,7 +19,7 @@ export default {
   }),
   methods: {
     joinRoom() {
-      this.$router.push({ name: "Room", param: this.roomName });
+      this.$router.push({ name: "Room", params: { roomName: this.roomName} });
     },
   },
    beforeRouteLeave (to, from, next) {
